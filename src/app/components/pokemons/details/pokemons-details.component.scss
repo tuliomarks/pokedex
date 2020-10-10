@@ -1,0 +1,19 @@
+app-pokemons-details {
+    padding: 16px;
+
+    display: flex;
+    flex: 1; 
+    max-width: 60%;
+
+    background: transparent linear-gradient(114deg, #E9E9E9 0%, #A6A6A6 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 22px #00000029;
+    opacity: 1;
+}
+
+.app-card {
+    background: #FFFFFFB5 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    padding: 4px;
+    margin: 4px;
+}

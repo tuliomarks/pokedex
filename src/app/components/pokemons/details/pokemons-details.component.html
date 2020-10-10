@@ -1,0 +1,40 @@
+<div class="pokemon-detail" fxFlex fxLayout="column" fxLayoutAlign="start start">
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <!-- APP TITLE -->
+        <h1>Details {{pokemon.name}}</h1>
+        <!-- / APP TITLE -->
+
+    </div>
+    <!-- / HEADER -->
+
+    <!-- CONTENT -->
+    <div fxLayout="row" fxFlexFill fxLayoutGap="8">
+    
+        <div class="" fxLayout="column" fxFlex="33" >
+            <h2>Abilities</h2>
+            <div class="app-card" *ngFor="let ability of pokemon.abilities" fxLayoutAlign="space-between start" fxLayoutGap="4"> 
+                <span>{{ability.ability.name}}</span>
+            </div>
+        </div>
+
+        <div fxLayout="column" fxFlex="1 1 33" >
+            <h2>Stats</h2>
+            <div class="app-card" *ngFor="let stat of pokemon.stats" fxLayout="row" fxLayoutAlign="space-between start" fxLayoutGap="4">
+                <span>{{stat.stat.name}}</span>
+                <span>{{stat.base_stat}}</span>
+            </div>
+        </div>
+
+        <div fxLayout="column" fxFlex="33" >
+            <h2>Moves</h2>
+            <div class="app-card" *ngFor="let move of moves" fxLayoutAlign="space-between start" fxLayoutGap="4">
+                <span>{{move.move.name}}</span>
+            </div>
+        </div>
+        
+    </div>
+    <!-- / CONTENT -->
+</div>

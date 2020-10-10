@@ -1,0 +1,18 @@
+<div class="pokemons" fxFlex fxLayout="column" fxLayoutAlign="start start">
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <!-- APP TITLE -->
+        <h1>All Pokemons</h1>
+        <!-- / APP TITLE -->
+
+    </div>
+    <!-- / HEADER -->
+
+    <!-- CONTENT -->
+    <div class="content-card" fxLayout="column" fxFlexFill fxLayoutGap="12">
+        <app-pokemon-view *ngFor="let pokemon of pokemonsList" [model]="pokemon"></app-pokemon-view>
+    </div>
+    <!-- / CONTENT -->
+</div>
